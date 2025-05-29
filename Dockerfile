@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the built Spring Boot jar file to the container
-COPY target/*.jar app.jar
+COPY targets/*.jar app.jar
 
 # Run the application
 CMD ["java", "-jar", "app.jar"]
